@@ -10,18 +10,34 @@ import SwiftUI
 struct CalendarView: View {
     @Binding var isPresented: Bool
     @State private var selectedDate: Date = Date()
-    
-    var body: some View {
-            VStack(spacing: 20) {
-                DatePicker("Select a Date", selection: $selectedDate, displayedComponents: .date)
-                    .labelsHidden() // this hides the label to only show the date picker.
-                    .datePickerStyle(GraphicalDatePickerStyle())
+    @ObservedObject var userSelectionStore: UserSelectionStore
 
-                Button("Close") {
-                    isPresented = false
-                }
+    var body: some View {
+        VStack(spacing: 20) {
+            DatePicker("Select a Date", selection: $selectedDate, displayedComponents: .date)
+                .labelsHidden()
+                .datePickerStyle(GraphicalDatePickerStyle())
+                .background(
+                    userSelectionStore.selections
+                        .filter { $0.dateString == DateFormatter.dateOnly.string(from: selectedDate) }
+                        .first.map { selection in
+                            Circle()
+                                .fill(selection.color.colorValue)
+                                .frame(width: 30, height: 30)
+                                .offset(y: -40) // Adjust as needed for your layout
+                        }
+                )
+
+            if let feeling = userSelectionStore.selections.first(where: { $0.dateString == DateFormatter.dateOnly.string(from: selectedDate) })?.feeling {
+                Text(feeling)
             }
-            .padding()
+            
+            Button("Close") {
+                isPresented = false
+            }
         }
+        .padding()
+    }
 }
+
 

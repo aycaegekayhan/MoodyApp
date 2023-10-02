@@ -13,6 +13,8 @@ struct ContentView: View {
     @State private var userFeeling: String = ""
     @State private var userSelections: [UserSelection] = []
     @State private var isCalendarPresented: Bool = false
+    @StateObject private var userSelectionStore = UserSelectionStore()
+
 
 
     let mantras = [
@@ -73,8 +75,9 @@ struct ContentView: View {
                 )
             }
             .sheet(isPresented: $isCalendarPresented) {
-                CalendarView(isPresented: $isCalendarPresented)
+                CalendarView(isPresented: $isCalendarPresented, userSelectionStore: userSelectionStore)
             }
+
             .onAppear {
                 displayDailyMantra()
             }
@@ -84,6 +87,7 @@ struct ContentView: View {
     func saveSelection(for color: ColorType, feeling: String) {
         let selection = UserSelection(date: Date(), color: color, feeling: feeling)
         userSelections.append(selection)
+        userSelectionStore.selections.append(selection) // Add this line
         // Reset for the next entry
         userFeeling = ""
         selectedColor = nil

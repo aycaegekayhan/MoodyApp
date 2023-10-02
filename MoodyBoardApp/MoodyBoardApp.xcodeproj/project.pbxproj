@@ -16,6 +16,8 @@
 		A4DAEE282AC340B500F70D92 /* MoodyBoardAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE272AC340B500F70D92 /* MoodyBoardAppUITestsLaunchTests.swift */; };
 		A4DAEE352AC3442000F70D92 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE342AC3442000F70D92 /* DataModels.swift */; };
 		A4DAEE3D2ACB0E6300F70D92 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE3C2ACB0E6300F70D92 /* CalendarView.swift */; };
+		A4DAEE3F2ACB18C700F70D92 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE3E2ACB18C700F70D92 /* DateFormatter+Extensions.swift */; };
+		A4DAEE412ACB193200F70D92 /* UserSelectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE402ACB193200F70D92 /* UserSelectionStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		A4DAEE272AC340B500F70D92 /* MoodyBoardAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyBoardAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A4DAEE342AC3442000F70D92 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		A4DAEE3C2ACB0E6300F70D92 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		A4DAEE3E2ACB18C700F70D92 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		A4DAEE402ACB193200F70D92 /* UserSelectionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectionStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				A4DAEE0A2AC340B000F70D92 /* MoodyBoardAppApp.swift */,
 				A4DAEE0C2AC340B000F70D92 /* ContentView.swift */,
 				A4DAEE0E2AC340B500F70D92 /* Assets.xcassets */,
+				A4DAEE3E2ACB18C700F70D92 /* DateFormatter+Extensions.swift */,
+				A4DAEE402ACB193200F70D92 /* UserSelectionStore.swift */,
 				A4DAEE102AC340B500F70D92 /* Preview Content */,
 			);
 			path = MoodyBoardApp;
@@ -267,6 +273,8 @@
 				A4DAEE0D2AC340B000F70D92 /* ContentView.swift in Sources */,
 				A4DAEE3D2ACB0E6300F70D92 /* CalendarView.swift in Sources */,
 				A4DAEE0B2AC340B000F70D92 /* MoodyBoardAppApp.swift in Sources */,
+				A4DAEE3F2ACB18C700F70D92 /* DateFormatter+Extensions.swift in Sources */,
+				A4DAEE412ACB193200F70D92 /* UserSelectionStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
