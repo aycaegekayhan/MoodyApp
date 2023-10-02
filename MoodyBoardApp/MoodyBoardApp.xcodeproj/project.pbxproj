@@ -18,6 +18,7 @@
 		A4DAEE3D2ACB0E6300F70D92 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE3C2ACB0E6300F70D92 /* CalendarView.swift */; };
 		A4DAEE3F2ACB18C700F70D92 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE3E2ACB18C700F70D92 /* DateFormatter+Extensions.swift */; };
 		A4DAEE412ACB193200F70D92 /* UserSelectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE402ACB193200F70D92 /* UserSelectionStore.swift */; };
+		A4DAEE452ACB5F2900F70D92 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE442ACB5F2900F70D92 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,9 @@
 		A4DAEE3C2ACB0E6300F70D92 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		A4DAEE3E2ACB18C700F70D92 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		A4DAEE402ACB193200F70D92 /* UserSelectionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectionStore.swift; sourceTree = "<group>"; };
+		A4DAEE422ACB56C700F70D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A4DAEE432ACB584100F70D92 /* MoodyBoardApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodyBoardApp.entitlements; sourceTree = "<group>"; };
+		A4DAEE442ACB5F2900F70D92 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +106,16 @@
 		A4DAEE092AC340B000F70D92 /* MoodyBoardApp */ = {
 			isa = PBXGroup;
 			children = (
+				A4DAEE432ACB584100F70D92 /* MoodyBoardApp.entitlements */,
+				A4DAEE422ACB56C700F70D92 /* Info.plist */,
+				A4DAEE442ACB5F2900F70D92 /* NotificationManager.swift */,
 				A4DAEE3C2ACB0E6300F70D92 /* CalendarView.swift */,
 				A4DAEE342AC3442000F70D92 /* DataModels.swift */,
 				A4DAEE0A2AC340B000F70D92 /* MoodyBoardAppApp.swift */,
 				A4DAEE0C2AC340B000F70D92 /* ContentView.swift */,
-				A4DAEE0E2AC340B500F70D92 /* Assets.xcassets */,
 				A4DAEE3E2ACB18C700F70D92 /* DateFormatter+Extensions.swift */,
 				A4DAEE402ACB193200F70D92 /* UserSelectionStore.swift */,
+				A4DAEE0E2AC340B500F70D92 /* Assets.xcassets */,
 				A4DAEE102AC340B500F70D92 /* Preview Content */,
 			);
 			path = MoodyBoardApp;
@@ -273,6 +280,7 @@
 				A4DAEE0D2AC340B000F70D92 /* ContentView.swift in Sources */,
 				A4DAEE3D2ACB0E6300F70D92 /* CalendarView.swift in Sources */,
 				A4DAEE0B2AC340B000F70D92 /* MoodyBoardAppApp.swift in Sources */,
+				A4DAEE452ACB5F2900F70D92 /* NotificationManager.swift in Sources */,
 				A4DAEE3F2ACB18C700F70D92 /* DateFormatter+Extensions.swift in Sources */,
 				A4DAEE412ACB193200F70D92 /* UserSelectionStore.swift in Sources */,
 			);
@@ -435,11 +443,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoodyBoardApp/MoodyBoardApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodyBoardApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodyBoardApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,11 +476,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoodyBoardApp/MoodyBoardApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodyBoardApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodyBoardApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

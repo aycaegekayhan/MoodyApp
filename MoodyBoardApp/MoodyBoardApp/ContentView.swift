@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct ContentView: View {
     @State private var dailyMantra: String = ""
@@ -14,8 +15,6 @@ struct ContentView: View {
     @State private var userSelections: [UserSelection] = []
     @State private var isCalendarPresented: Bool = false
     @StateObject private var userSelectionStore = UserSelectionStore()
-
-
 
     let mantras = [
         "Stay positive and strong.",
@@ -32,11 +31,11 @@ struct ContentView: View {
                 Text("Welcome to Moody App")
                     .font(.largeTitle)
                     .padding()
-                
+
                 Text(dailyMantra)
                     .font(.title)
                     .padding()
-                
+
                 HStack(spacing: 20) {
                     ForEach(ColorType.allCases, id: \.self) { color in
                         Circle()
@@ -50,11 +49,11 @@ struct ContentView: View {
                             )
                     }
                 }
-                
+
                 TextField("How are you feeling?", text: $userFeeling)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
-                
+
                 Button("Save") {
                     if let color = selectedColor {
                         saveSelection(for: color, feeling: userFeeling)
@@ -62,33 +61,42 @@ struct ContentView: View {
                 }
                 .padding()
                 
-            }
-            .navigationBarTitle(Text("Moody App"), displayMode: .inline) // Optional: set a title
-                .navigationBarItems(trailing:
-                    Button(action: {
-                        isCalendarPresented = true
-                    }) {
-                        Image(systemName: "calendar")
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                    }
-                )
-            }
-            .sheet(isPresented: $isCalendarPresented) {
-                CalendarView(isPresented: $isCalendarPresented, userSelectionStore: userSelectionStore)
+                Button("Allow Notifications") {
+                    NotificationManager.shared.requestNotificationPermission()
+                }.onAppear {
+                    NotificationManager.shared.scheduleDailyNotification()
+                }
+                
+                
+
             }
 
-            .onAppear {
-                displayDailyMantra()
+            .fullScreenCover(isPresented: $isCalendarPresented) {
+                CalendarView(isPresented: $isCalendarPresented, userSelectionStore: userSelectionStore)
+                    .edgesIgnoringSafeArea(.all)
             }
+            
+            .navigationBarTitle(Text("Moody App"), displayMode: .inline)
+            .navigationBarItems(trailing:
+                Button(action: {
+                    isCalendarPresented.toggle()
+                }) {
+                    Image(systemName: "calendar")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                }
+            )
+        }
+        .onAppear {
+            displayDailyMantra()
         }
         
+    }
 
     func saveSelection(for color: ColorType, feeling: String) {
         let selection = UserSelection(date: Date(), color: color, feeling: feeling)
         userSelections.append(selection)
-        userSelectionStore.selections.append(selection) // Add this line
-        // Reset for the next entry
+        userSelectionStore.selections.append(selection)
         userFeeling = ""
         selectedColor = nil
     }
