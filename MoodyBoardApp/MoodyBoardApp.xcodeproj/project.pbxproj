@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4DAEE0B2AC340B000F70D92 /* MoodyBoardAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE0A2AC340B000F70D92 /* MoodyBoardAppApp.swift */; };
+		A4DAEE0D2AC340B000F70D92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE0C2AC340B000F70D92 /* ContentView.swift */; };
+		A4DAEE0F2AC340B500F70D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4DAEE0E2AC340B500F70D92 /* Assets.xcassets */; };
+		A4DAEE122AC340B500F70D92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4DAEE112AC340B500F70D92 /* Preview Assets.xcassets */; };
+		A4DAEE1C2AC340B500F70D92 /* MoodyBoardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE1B2AC340B500F70D92 /* MoodyBoardAppTests.swift */; };
+		A4DAEE262AC340B500F70D92 /* MoodyBoardAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE252AC340B500F70D92 /* MoodyBoardAppUITests.swift */; };
+		A4DAEE282AC340B500F70D92 /* MoodyBoardAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE272AC340B500F70D92 /* MoodyBoardAppUITestsLaunchTests.swift */; };
+		A4DAEE352AC3442000F70D92 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE342AC3442000F70D92 /* DataModels.swift */; };
+		A4DAEE3D2ACB0E6300F70D92 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAEE3C2ACB0E6300F70D92 /* CalendarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4DAEE182AC340B500F70D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4DAEDFF2AC340B000F70D92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4DAEE062AC340B000F70D92;
+			remoteInfo = MoodyBoardApp;
+		};
+		A4DAEE222AC340B500F70D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4DAEDFF2AC340B000F70D92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4DAEE062AC340B000F70D92;
+			remoteInfo = MoodyBoardApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4DAEE072AC340B000F70D92 /* MoodyBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodyBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4DAEE0A2AC340B000F70D92 /* MoodyBoardAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyBoardAppApp.swift; sourceTree = "<group>"; };
+		A4DAEE0C2AC340B000F70D92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A4DAEE0E2AC340B500F70D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4DAEE112AC340B500F70D92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A4DAEE172AC340B500F70D92 /* MoodyBoardAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodyBoardAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4DAEE1B2AC340B500F70D92 /* MoodyBoardAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyBoardAppTests.swift; sourceTree = "<group>"; };
+		A4DAEE212AC340B500F70D92 /* MoodyBoardAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodyBoardAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4DAEE252AC340B500F70D92 /* MoodyBoardAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyBoardAppUITests.swift; sourceTree = "<group>"; };
+		A4DAEE272AC340B500F70D92 /* MoodyBoardAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyBoardAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4DAEE342AC3442000F70D92 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		A4DAEE3C2ACB0E6300F70D92 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4DAEE042AC340B000F70D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DAEE142AC340B500F70D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DAEE1E2AC340B500F70D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4DAEDFE2AC340B000F70D92 = {
+			isa = PBXGroup;
+			children = (
+				A4DAEE092AC340B000F70D92 /* MoodyBoardApp */,
+				A4DAEE1A2AC340B500F70D92 /* MoodyBoardAppTests */,
+				A4DAEE242AC340B500F70D92 /* MoodyBoardAppUITests */,
+				A4DAEE082AC340B000F70D92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4DAEE082AC340B000F70D92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4DAEE072AC340B000F70D92 /* MoodyBoardApp.app */,
+				A4DAEE172AC340B500F70D92 /* MoodyBoardAppTests.xctest */,
+				A4DAEE212AC340B500F70D92 /* MoodyBoardAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4DAEE092AC340B000F70D92 /* MoodyBoardApp */ = {
+			isa = PBXGroup;
+			children = (
+				A4DAEE3C2ACB0E6300F70D92 /* CalendarView.swift */,
+				A4DAEE342AC3442000F70D92 /* DataModels.swift */,
+				A4DAEE0A2AC340B000F70D92 /* MoodyBoardAppApp.swift */,
+				A4DAEE0C2AC340B000F70D92 /* ContentView.swift */,
+				A4DAEE0E2AC340B500F70D92 /* Assets.xcassets */,
+				A4DAEE102AC340B500F70D92 /* Preview Content */,
+			);
+			path = MoodyBoardApp;
+			sourceTree = "<group>";
+		};
+		A4DAEE102AC340B500F70D92 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A4DAEE112AC340B500F70D92 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A4DAEE1A2AC340B500F70D92 /* MoodyBoardAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4DAEE1B2AC340B500F70D92 /* MoodyBoardAppTests.swift */,
+			);
+			path = MoodyBoardAppTests;
+			sourceTree = "<group>";
+		};
+		A4DAEE242AC340B500F70D92 /* MoodyBoardAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A4DAEE252AC340B500F70D92 /* MoodyBoardAppUITests.swift */,
+				A4DAEE272AC340B500F70D92 /* MoodyBoardAppUITestsLaunchTests.swift */,
+			);
+			path = MoodyBoardAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4DAEE062AC340B000F70D92 /* MoodyBoardApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4DAEE2B2AC340B500F70D92 /* Build configuration list for PBXNativeTarget "MoodyBoardApp" */;
+			buildPhases = (
+				A4DAEE032AC340B000F70D92 /* Sources */,
+				A4DAEE042AC340B000F70D92 /* Frameworks */,
+				A4DAEE052AC340B000F70D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodyBoardApp;
+			productName = MoodyBoardApp;
+			productReference = A4DAEE072AC340B000F70D92 /* MoodyBoardApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4DAEE162AC340B500F70D92 /* MoodyBoardAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4DAEE2E2AC340B500F70D92 /* Build configuration list for PBXNativeTarget "MoodyBoardAppTests" */;
+			buildPhases = (
+				A4DAEE132AC340B500F70D92 /* Sources */,
+				A4DAEE142AC340B500F70D92 /* Frameworks */,
+				A4DAEE152AC340B500F70D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4DAEE192AC340B500F70D92 /* PBXTargetDependency */,
+			);
+			name = MoodyBoardAppTests;
+			productName = MoodyBoardAppTests;
+			productReference = A4DAEE172AC340B500F70D92 /* MoodyBoardAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4DAEE202AC340B500F70D92 /* MoodyBoardAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4DAEE312AC340B500F70D92 /* Build configuration list for PBXNativeTarget "MoodyBoardAppUITests" */;
+			buildPhases = (
+				A4DAEE1D2AC340B500F70D92 /* Sources */,
+				A4DAEE1E2AC340B500F70D92 /* Frameworks */,
+				A4DAEE1F2AC340B500F70D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4DAEE232AC340B500F70D92 /* PBXTargetDependency */,
+			);
+			name = MoodyBoardAppUITests;
+			productName = MoodyBoardAppUITests;
+			productReference = A4DAEE212AC340B500F70D92 /* MoodyBoardAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4DAEDFF2AC340B000F70D92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A4DAEE062AC340B000F70D92 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A4DAEE162AC340B500F70D92 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A4DAEE062AC340B000F70D92;
+					};
+					A4DAEE202AC340B500F70D92 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A4DAEE062AC340B000F70D92;
+					};
+				};
+			};
+			buildConfigurationList = A4DAEE022AC340B000F70D92 /* Build configuration list for PBXProject "MoodyBoardApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4DAEDFE2AC340B000F70D92;
+			productRefGroup = A4DAEE082AC340B000F70D92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4DAEE062AC340B000F70D92 /* MoodyBoardApp */,
+				A4DAEE162AC340B500F70D92 /* MoodyBoardAppTests */,
+				A4DAEE202AC340B500F70D92 /* MoodyBoardAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4DAEE052AC340B000F70D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4DAEE122AC340B500F70D92 /* Preview Assets.xcassets in Resources */,
+				A4DAEE0F2AC340B500F70D92 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DAEE152AC340B500F70D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DAEE1F2AC340B500F70D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4DAEE032AC340B000F70D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4DAEE352AC3442000F70D92 /* DataModels.swift in Sources */,
+				A4DAEE0D2AC340B000F70D92 /* ContentView.swift in Sources */,
+				A4DAEE3D2ACB0E6300F70D92 /* CalendarView.swift in Sources */,
+				A4DAEE0B2AC340B000F70D92 /* MoodyBoardAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DAEE132AC340B500F70D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4DAEE1C2AC340B500F70D92 /* MoodyBoardAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DAEE1D2AC340B500F70D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4DAEE282AC340B500F70D92 /* MoodyBoardAppUITestsLaunchTests.swift in Sources */,
+				A4DAEE262AC340B500F70D92 /* MoodyBoardAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4DAEE192AC340B500F70D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4DAEE062AC340B000F70D92 /* MoodyBoardApp */;
+			targetProxy = A4DAEE182AC340B500F70D92 /* PBXContainerItemProxy */;
+		};
+		A4DAEE232AC340B500F70D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4DAEE062AC340B000F70D92 /* MoodyBoardApp */;
+			targetProxy = A4DAEE222AC340B500F70D92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A4DAEE292AC340B500F70D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4DAEE2A2AC340B500F70D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4DAEE2C2AC340B500F70D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoodyBoardApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AS.MoodyBoardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4DAEE2D2AC340B500F70D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoodyBoardApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AS.MoodyBoardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4DAEE2F2AC340B500F70D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AS.MoodyBoardAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodyBoardApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoodyBoardApp";
+			};
+			name = Debug;
+		};
+		A4DAEE302AC340B500F70D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AS.MoodyBoardAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodyBoardApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoodyBoardApp";
+			};
+			name = Release;
+		};
+		A4DAEE322AC340B500F70D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AS.MoodyBoardAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoodyBoardApp;
+			};
+			name = Debug;
+		};
+		A4DAEE332AC340B500F70D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AS.MoodyBoardAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoodyBoardApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4DAEE022AC340B000F70D92 /* Build configuration list for PBXProject "MoodyBoardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4DAEE292AC340B500F70D92 /* Debug */,
+				A4DAEE2A2AC340B500F70D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4DAEE2B2AC340B500F70D92 /* Build configuration list for PBXNativeTarget "MoodyBoardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4DAEE2C2AC340B500F70D92 /* Debug */,
+				A4DAEE2D2AC340B500F70D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4DAEE2E2AC340B500F70D92 /* Build configuration list for PBXNativeTarget "MoodyBoardAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4DAEE2F2AC340B500F70D92 /* Debug */,
+				A4DAEE302AC340B500F70D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4DAEE312AC340B500F70D92 /* Build configuration list for PBXNativeTarget "MoodyBoardAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4DAEE322AC340B500F70D92 /* Debug */,
+				A4DAEE332AC340B500F70D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4DAEDFF2AC340B000F70D92 /* Project object */;
+}
