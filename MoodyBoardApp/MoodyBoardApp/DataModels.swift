@@ -8,7 +8,7 @@
 import SwiftUI
 import Foundation
 
-struct UserSelection: Identifiable {
+struct UserSelection: Codable, Identifiable {
     let id = UUID()
     let date: Date
     let color: ColorType

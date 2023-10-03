@@ -89,16 +89,34 @@ struct ContentView: View {
         }
         .onAppear {
             displayDailyMantra()
+            loadUserSelections()
         }
         
     }
 
     func saveSelection(for color: ColorType, feeling: String) {
         let selection = UserSelection(date: Date(), color: color, feeling: feeling)
-        userSelections.append(selection)
-        userSelectionStore.selections.append(selection)
-        userFeeling = ""
-        selectedColor = nil
+            userSelections.append(selection)
+            userSelectionStore.selections.append(selection)
+            
+            // Save to UserDefaults
+            let encoder = JSONEncoder()
+            if let data = try? encoder.encode(userSelections) {
+                UserDefaults.standard.set(data, forKey: "UserSelections")
+            }
+            
+            userFeeling = ""
+            selectedColor = nil
+    }
+    
+    func loadUserSelections() {
+        if let data = UserDefaults.standard.data(forKey: "UserSelections") {
+            let decoder = JSONDecoder()
+            if let decodedSelections = try? decoder.decode([UserSelection].self, from: data) {
+                userSelections = decodedSelections
+                userSelectionStore.selections = decodedSelections
+            }
+        }
     }
 
     func displayDailyMantra() {
