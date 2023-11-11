@@ -9,10 +9,20 @@ import SwiftUI
 import Foundation
 
 struct UserSelection: Codable, Identifiable {
-    let id = UUID()
+    let id: UUID
     let date: Date
     let color: ColorType
     let feeling: String
+    let mood: Mood
+
+    init(id: UUID = UUID(), date: Date, color: ColorType, feeling: String, mood: Mood) {
+        self.id = id
+        self.date = date
+        self.color = color
+        self.feeling = feeling
+        self.mood = mood
+    }
+
 
     var dateString: String {
         let formatter = DateFormatter()
@@ -21,7 +31,7 @@ struct UserSelection: Codable, Identifiable {
     }
 }
 enum ColorType: String, Codable, CaseIterable {
-    case red, blue, green, yellow, purple
+    case red, teal, green, yellow, purple
 }
 
 extension ColorType {
@@ -29,8 +39,8 @@ extension ColorType {
         switch self {
         case .red:
             return Color.red
-        case .blue:
-            return Color.blue
+        case .teal:
+            return Color.teal
         case .green:
             return Color.green
         case .yellow:
@@ -39,6 +49,16 @@ extension ColorType {
             return Color.purple
         }
     }
+}
+
+enum Mood: String, Codable, CaseIterable, Identifiable {
+    case happy = "😃"
+    case sad = "😢"
+    case angry = "😠"
+    case surprised = "😮"
+    case neutral = "😐"
+    
+    var id: String { self.rawValue }
 }
 
 
